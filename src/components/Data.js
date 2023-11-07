@@ -1,34 +1,54 @@
 import React, { useState, useEffect } from 'react';
 
 function Data() {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [breeds, setBreeds] = useState([]);
+  const [selectedBreed, setSelectedBreed] = useState(null);
 
   useEffect(() => {
-    // Replace the API URL with the dog breed API
-    fetch('https://dog.ceo/api/breeds/list/all')
+    // Fetch dog breeds from the API and update the state
+    fetch('https://dogapi.dog/api/v2/breeds?page[number]=1')
       .then(response => response.json())
       .then(data => {
-        setData(data.message);
-        setLoading(false);
+        setBreeds(data.data);
       })
       .catch(error => {
         console.error(error);
-        setLoading(false);
       });
   }, []);
+
+  const handleBreedClick = breedName => {
+    // Set the selected breed when a breed is clicked
+    setSelectedBreed(breeds.find(breed => breed.attributes.name === breedName));
+  };
 
   return (
     <div>
       <h1>Dog Breeds:</h1>
-      {loading ? (
-        <p>Loading data...</p>
-      ) : (
-        <ul>
-          {Object.keys(data).map(breed => (
-            <li key={breed}>{breed}</li>
-          ))}
-        </ul>
+      <ul>
+        {breeds.map(breed => (
+          <li
+            key={breed.id}
+            onClick={() => handleBreedClick(breed.attributes.name)}
+          >
+            {breed.attributes.name}
+          </li>
+        ))}
+      </ul>
+      {selectedBreed && (
+        <div>
+          <h2>Selected Breed: {selectedBreed.attributes.name}</h2>
+          <p>Description: {selectedBreed.attributes.description}</p>
+          <p>Maximum Age: {selectedBreed.attributes.life.max} years</p>
+          <p>Minimum Age: {selectedBreed.attributes.life.min} years</p>
+          <p>
+            Male Weight: {selectedBreed.attributes.male_weight.min} -{' '}
+            {selectedBreed.attributes.male_weight.max} kg
+          </p>
+          <p>
+            Female Weight: {selectedBreed.attributes.female_weight.min} -{' '}
+            {selectedBreed.attributes.female_weight.max} kg
+          </p>
+        </div>
       )}
     </div>
   );
