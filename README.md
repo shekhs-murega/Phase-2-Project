@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+## Dog Breed App
+The Dog Breed App is a user-friendly web application designed for dog enthusiasts and curious minds alike. With this app, you can explore a vast array of dog breeds, each with its unique characteristics and charm. Browse through a comprehensive list of breeds, select one that piques your interest, and delve into detailed descriptions, including life expectancy and weight ranges. It's your one-stop source for canine knowledge, helping you make informed decisions about your future furry companions.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
+- [Features](#features)
+ - [Installation](#installation)
+- [Usage](#usage)
+- [Components]()
+- [Routes]()
+- [API Intergration]()
+- [Styling]()
+- [Contributing](#contributing)
+- [License](#license)
 
-## Available Scripts
+## Features
+- View a list of various dog breeds.
+- Select a breed to view detailed information.
+- Display breed descriptions, life expectancy, and weight ranges.
+- Subscribe to newsletters to receive dog-related updates.
 
-In the project directory, you can run:
+## Installation
+To run the Dog Breed App on your local machine, follow these steps:
+1.Clone the repository to your local machine using Git:
+   ```bash
+   git clone https://github.com/shekhs-murega/Phase-2-Project.git
+   ```
+2.Navigate to the project directory:
+   ```bash
+   cd dog-breed-app
+   ```
+3.Install the necessary dependencies using npm:
+  ```bash
+   npm install
+   ```
+4.Start the development server:
+  ```bash
+   npm start
+   ```
+5.The app will be accessible in your browser at `http://localhost:3001`.
 
-### `npm start`
+## Usage
+-Visit the website and click the data tab to view a list of breeds.
+-Click on a breed to display detailed information about that breed 
+-You can also subscribe to newsletters by entering your email and clicking the "Subscribe" button.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Components
+The app is structured into several components:
+- `App.js`: The main component that renders other components.
+- `Data.js`: Displays the list of dog breeds and shows detailed information about a selected breed.
+- `Header.js`: Displays the application header with navigation and subscription form.
+- `Footer.js`: The footer of the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Routes
+The app uses React Router to navigate between different pages:
 
-### `npm test`
+- `/`: Home page, it's the main page of the app.
+- `/about`: Gives a brief description of the  Dog Breed App.
+- `/data`: A list of dog breeds fetched from the API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API Intergration
+The app integrates with the Dog API to fetch the list of dog breeds:
 
-### `npm run build`
+  - API URL: https://dogapi.dog/api/v2/breeds?page[number]=1
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Styling
+The app's styling is defined in the CSS files within each component's directory and also uses a Semantic UI CSS.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contibuting
+Contributions to this project are welcome. You can open issues, fork the repository, make changes, and submit pull requests.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This project is licensed under the MIT License.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
