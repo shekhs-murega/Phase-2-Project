@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -31,23 +32,22 @@ function Header() {
   };
 
   return (
-    <header>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/data">Data</Link></li>
+    <header className="header-container">
+      <nav className="nav">
+        <ul className="nav-list">
+          <li><Link to="/" className="nav-link">Home</Link></li>
+          <li><Link to="/about" className="nav-link">About</Link></li>
+          <li><Link to="/data" className="nav-link">Data</Link></li>
         </ul>
       </nav>
-      <section>
-        <h2>Subscribe to Our Newsletter</h2>
-        <form onSubmit={handleSubscribe}>
-          <input type="email" name="email" placeholder="Enter your email" />
-          <button type="submit">Subscribe</button>
+      <section className="subscribe-section">
+        <h2 className="subscribe-heading">Subscribe to Our Newsletter</h2>
+        <form onSubmit={handleSubscribe} className="subscribe-form">
+          <input type="email" name="email" placeholder="Enter your email" className="subscribe-input" />
+          <button type="submit" className="subscribe-button">Subscribe</button>
         </form>
       </section>
     </header>
   );
 }
-
 export default Header;
