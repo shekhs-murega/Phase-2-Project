@@ -5,18 +5,14 @@ function About() {
   return (
     <div className="about-container">
       <img
-        src="https://media.giphy.com/media/U5dPt0qZ7F1ks/giphy.gif"
+        src="https://media.giphy.com/media/cLcxtL1z8t8oo/giphy.gif"
         alt="dog giphy"
         className="about-image"
       />
       <div className="about-description">
         <h1>About My App</h1>
         <p>
-          This is a web application that allows you to view information about various dog breeds.
-          Its features include:
-          viewing a list of dog breeds,
-          selecting a breed to view its details, and
-          displaying breed information, including description, life expectancy, and weight.
+        "The Dog Breed App is a user-friendly web application designed for dog enthusiasts and curious minds alike. With this app, you can explore a vast array of dog breeds, each with its unique characteristics and charm. Browse through a comprehensive list of breeds, select one that piques your interest, and delve into detailed descriptions, including life expectancy and weight ranges. It's your one-stop source for canine knowledge, helping you make informed decisions about your future furry companions. Whether you're a seasoned dog lover or just beginning your journey into the world of canines, the Dog Breed App is your trusted companion for all things dog-related."
         </p>
       </div>
     </div>
