@@ -1,6 +1,26 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  background-color: burlywood;
+  color: #fff;
+  padding: 20px;
+}
+
 .footer {
-  background-color: #007BFF; 
+  background-color: black;
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+
+.content {
+  flex: 1;
 }
