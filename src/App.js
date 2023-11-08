@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Data from './components/Data';
 import 'semantic-ui-css/semantic.min.css';
+import './App.css';
 
 
 function App() {
