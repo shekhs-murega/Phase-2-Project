@@ -61,7 +61,7 @@ The app uses React Router to navigate between different pages:
 ## API Intergration
 The app integrates with the Dog API to fetch the list of dog breeds:
 
-  - API URL: https://dogapi.dog/api/v2/breeds?page[number]=1
+  - API URL: https://dogapi.dog/api/v2/breeds
 
 ## Styling
 The app's styling is defined in the CSS files within each component's directory and also uses a Semantic UI CSS and Bootstrap.css.
