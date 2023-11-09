@@ -9,6 +9,7 @@ The Dog Breed App is a user-friendly web application designed for dog enthusiast
 - [Routes]()
 - [API Intergration]()
 - [Styling]()
+- [Deployment]()
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -64,6 +65,18 @@ The app integrates with the Dog API to fetch the list of dog breeds:
 
 ## Styling
 The app's styling is defined in the CSS files within each component's directory and also uses a Semantic UI CSS.
+
+## Deployment
+This app is deployed using [Netlify](https://www.netlify.com/).
+
+- Live App: [![Netlify Status](https://api.netlify.com/api/v1/badges/2471de47-696b-4292-9c43-8dbd932ec456/deploy-status)](https://app.netlify.com/sites/cozy-strudel-8c4878/deploys)
+
+To deploy the app yourself, follow these steps:
+
+1. Build your app:
+   ```bash
+   npm run build
+   ```
 
 ## Contibuting
 Contributions to this project are welcome. You can open issues, fork the repository, make changes, and submit pull requests.
