@@ -1,10 +1,14 @@
 
 body {
-  display: flex;
-  flex-direction: column;
-  max-height: 100vh;
+  width: 100vw;
+  height: fit-content;
+  background-image: url(/public/backgroung.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+
 }
 
 .header-container {

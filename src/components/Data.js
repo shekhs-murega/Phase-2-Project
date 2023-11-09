@@ -8,7 +8,7 @@ function Data() {
 
   useEffect(() => {
     // Fetch dog breeds from the API and update the state
-    fetch('https://dogapi.dog/api/v2/breeds?page[number]=1')
+    fetch('https://dogapi.dog/api/v2/breeds')
       .then((response) => response.json())
       .then((data) => {
         setBreeds(data.data);

@@ -11,8 +11,9 @@ import './App.css';
 
 function App() {
   return (
+    <div>
     <Router>
-      <div>
+      <div className='container mt-4'>
         <Header />
         <main>
           <Routes>
@@ -24,6 +25,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </div>
   );
 }
 
