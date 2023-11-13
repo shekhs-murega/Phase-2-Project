@@ -69,7 +69,7 @@ The app's styling is defined in the CSS files within each component's directory 
 ## Deployment
 This app is deployed using [Netlify](https://www.netlify.com/).
 
-- #### Live link to view the project <a href="https://cozy-strudel-8c4878.netlify.app/">Dog we app .
+- #### Live link to view the project <a href='https://cozy-strudel-8c4878.netlify.app/'>Dog View app .
 
 To deploy the app yourself, follow these steps:
 
